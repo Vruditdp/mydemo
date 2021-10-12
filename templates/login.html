@@ -1,0 +1,22 @@
+
+
+<html>
+    <body>
+        <center>
+            <br>
+            welcome....<br><br>
+            <!-- {{uname}} -->
+
+            <form action="auth" method="POST">
+                {% csrf_token %}
+                Username : <input type="text" name="uname"> <br><br>
+                password : <input type="password" name="pass"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </center>
+       
+    </body>
+</html>
+

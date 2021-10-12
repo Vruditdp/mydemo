@@ -1,0 +1,19 @@
+{% extends 'master2.html' %}
+
+{% block mycontent %}
+
+<div class="post">
+    <h2 class="title"><a href="#">Home Page </a></h2>
+    <div style="clear: both;">&nbsp;</div>
+    <div class="entry">
+        Welcome to HomePage
+    </div>
+    <form>
+        {% csrf_token %}
+       username: <input type="text" name="username">
+       <button type="submit">Submit.</button>
+    </form>
+</div>
+
+{% endblock %}
+
